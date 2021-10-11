@@ -17,5 +17,8 @@
     <bean id="myCoach" class="com.koi.demo.BaseballCoach">
         <constructor-arg ref="myFortune"/>
     </bean>
+    <bean id="myTennisCoach" class="com.koi.demo.TennisCoach">
+        <property name="fortuneService" ref="myFortune"/>
+    </bean>
     <bean id="myFortune" class="com.koi.demo.HappyFortuneService"/>
 </beans>
