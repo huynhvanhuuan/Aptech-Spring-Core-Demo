@@ -2,6 +2,14 @@ package com.koi.demo;
 
 public class TennisCoach implements Coach {
 
+    private FortuneService fortuneService;
+
+    public TennisCoach() {}
+
+    public void setFortuneService(FortuneService fortuneService) {
+        this.fortuneService = fortuneService;
+    }
+
     @Override
     public String getDailyWorkout() {
         return "Jump 2 around the yard";
